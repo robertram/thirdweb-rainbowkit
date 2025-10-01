@@ -9,23 +9,25 @@ import { client } from '@/app/client';
 export const DeployContract = () => {
 
   const deployContract = async () => {
-    const chain = defineChain(84532);
+    // const chain = defineChain(84532);
 
-    console.log('account', account);
+    // console.log('account', account);
 
-    const contractAddress = await deployERC20Contract({
-      chain,
-      client,
-      account,
-      type: "TokenERC20",
-      params: {
-        name: "MyToken",
-        description: "My Token contract",
-        symbol: "MT",
-      }
-    });
+    // const contractAddress = await deployERC20Contract({
+    //   chain,
+    //   client,
+    //   account,
+    //   type: "TokenERC20",
+    //   params: {
+    //     name: "MyToken",
+    //     description: "My Token contract",
+    //     symbol: "MT",
+    //   }
+    // });
 
-    console.log('contractAddress', contractAddress);
+    // console.log('contractAddress', contractAddress);
+
+    ////--------------------------------
 
     // const address = await deployPublishedContract({
     //   client: thirdwebClient,
@@ -50,13 +52,9 @@ export const DeployContract = () => {
         <div className='max-w-large flex items-center m-auto'>
           Deploy contract!!
 
-
-
-
           <button onClick={deployContract} className="bg-blue-500 text-black px-4 py-2 rounded-md">Deploy contract</button>
 
-
-          <TransactionButton
+          {/* <TransactionButton
             transaction={() => {
               return claimTo({
                 contract,
@@ -91,7 +89,7 @@ export const DeployContract = () => {
             onError={(e) => console.error(e)}
           >
             Dpeloy contract
-          </TransactionButton>
+          </TransactionButton> */}
 
         </div>
       </div>
