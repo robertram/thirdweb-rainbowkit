@@ -24,7 +24,7 @@ export default function RootLayout({
           <WalletProvider>
             {children}
           </WalletProvider>
-          </ThirdwebProvider>
+        </ThirdwebProvider>
       </body>
     </html>
   );
